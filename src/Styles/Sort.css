@@ -1,0 +1,74 @@
+/* Sort styles */
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 15px;
+    margin-right: -10px;
+  }
+  
+  .selected-category {
+    margin-right: 1600px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+  }
+  
+  .category-dropdown select {
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 9%;
+  }
+  
+  .sort-button {
+    padding: 5px 60px;
+    margin-right: 40px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .sort-button span {
+    font-size: 18px; 
+    margin-left: 5px; 
+    transition: transform 0.3s ease; 
+  }
+  
+ 
+  .sort-arrow {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  
+  .sort-options {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 5px 10px;
+    display: none;
+    z-index: 1;
+  }
+  
+  .sort-options.open {
+    display: block;
+    transform: translateY(100%); 
+  }
+  
+  .sort-options li {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .sort-options li:hover {
+    background-color: #f0f0f0;
+  }
